@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-import {addDynamicIconSelectors} from "@iconify/tailwind";
+import { addDynamicIconSelectors } from "@iconify/tailwind";
+import { transform } from "next/dist/build/swc";
 
 const config: Config = {
   content: [
@@ -9,6 +10,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        bouncing: "bouncing 1s ease-in-out infinite",
+      },
+      keyframes: {
+        bouncing: {
+          "0%, 100%": { transform: "translateY(-65%) translateX(-50%)" },
+          "50%": { transform: "translateY(0) translateX(-50%)" },
+        },
+      },
       colors: {
         baseColor: "#E4E6F2",
         mainColor: "#839CEA",
@@ -22,8 +32,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    addDynamicIconSelectors(),
-  ],
+  plugins: [addDynamicIconSelectors()],
 };
 export default config;

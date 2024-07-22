@@ -30,8 +30,8 @@ export default function RootLayout({
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M178 356C276.307 356 356 276.307 356 178C356 79.6933 276.307 0 178 0C79.6933 0 0 79.6933 0 178C0 276.307 79.6933 356 178 356ZM178.508 315.314C254.626 315.314 316.331 253.609 316.331 177.491C316.331 101.374 254.626 39.6686 178.508 39.6686C102.391 39.6686 40.6856 101.374 40.6856 177.491C40.6856 253.609 102.391 315.314 178.508 315.314Z"
             fill="#CFDBF4"
           />
@@ -40,7 +40,7 @@ export default function RootLayout({
     );
   };
   return (
-    <html lang="en" className="scroll-smooth relative overflow-hidden">
+    <html lang="en" className="relative scroll-smooth">
       <body className={`${roboto.className}`}>
         {children}
         <CircleDecor />

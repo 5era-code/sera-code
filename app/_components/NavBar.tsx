@@ -12,7 +12,7 @@ const bebasNeue = Bebas_Neue({
 export const NavBar = () => {
   const NavItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "About", path: "/#about-us" },
     { name: "Portfolios", path: "/portfolios" },
     { name: "Contact", path: "/contact" },
   ];

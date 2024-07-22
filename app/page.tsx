@@ -1,3 +1,5 @@
+import AboutUs from "./_components/AboutUs";
+import Hero from "./_components/Hero";
 import { NavBar } from "./_components/NavBar";
 
 export default function Home() {
@@ -27,6 +29,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col relative">
       <SideLineDecor />
       <NavBar />
+      <Hero />
+      <AboutUs />
     </main>
   );
 }
