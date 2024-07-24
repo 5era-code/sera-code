@@ -25,4 +25,7 @@ body {
   section {
     @apply px-6 md:px-24;
   }
+  p {
+    @apply text-sm md:text-xl;
+  }
 }

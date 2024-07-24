@@ -2,6 +2,7 @@ import React from "react";
 import { Bebas_Neue, Roboto } from "next/font/google";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -51,7 +52,16 @@ function AboutUs() {
       </svg>
     );
   };
-
+  const TechIcons = [
+    { icons: "logos:figma" },
+    { icons: "logos:nextjs-icon" },
+    { icons: "skill-icons:react-dark" },
+    { icons: "skill-icons:tailwindcss-dark" },
+    { icons: "vscode-icons:file-type-css" },
+    { icons: "vscode-icons:file-type-html" },
+    { icons: "logos:javascript" },
+    { icons: "logos:typescript-icon" },
+  ];
   return (
     <section className="mt-[10vh] sm:mt-[20vh]  lg:mt-[25vh]" id="about-us">
       <div>
@@ -78,6 +88,23 @@ function AboutUs() {
         <div className="flex flex-row flex-wrap gap-3 mt-5">
           <ServicesBtn btnTitle="Pembuatan Website" btnLink="/build-website" />
           <ServicesBtn btnTitle="Desain Grafis" btnLink="/graphic-design" />
+        </div>
+        <div className=" mt-7">
+          <div className="flex flex-row gap-3 items-center">
+            <p className="font-semibold text-mainColor">Technology</p>
+            <div className="w-full h-[2px] sm:h-1 bg-mainColor"></div>
+          </div>
+          <div className="flex flex-wrap w-full items-center gap-5 md:gap-10 pt-4">
+            {TechIcons.map((tech) => (
+              <Icon
+                key={tech.icons}
+                className="hover:-translate-y-2 shrink-0 transition-all duration-200 "
+                icon={tech.icons}
+                width="45"
+                height="45"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

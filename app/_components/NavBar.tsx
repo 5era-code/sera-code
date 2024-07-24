@@ -13,8 +13,8 @@ export const NavBar = () => {
   const NavItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/#about-us" },
-    { name: "Portfolios", path: "/portfolios" },
-    { name: "Contact", path: "/contact" },
+    // { name: "Portfolios", path: "/portfolios" },
+    { name: "Contact", path: "/#contact" },
   ];
   const [open, setOpen] = useState(false);
 

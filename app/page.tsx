@@ -1,6 +1,7 @@
 import AboutUs from "./_components/AboutUs";
 import Hero from "./_components/Hero";
 import { NavBar } from "./_components/NavBar";
+import ContactUs from "./_components/ContactUs";
 
 export default function Home() {
   const SideLineDecor = () => {
@@ -31,6 +32,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <AboutUs />
+      <ContactUs />
     </main>
   );
 }
