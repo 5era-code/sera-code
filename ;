@@ -2,7 +2,7 @@ import React from "react";
 import { Bebas_Neue, Roboto } from "next/font/google";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { StarSVG } from "./lib/constant/SVGs";
+import { StarSVG } from "./constant/svg";
 
 const roboto = Roboto({
   weight: ["400", "700"],
