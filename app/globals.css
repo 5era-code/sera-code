@@ -6,6 +6,7 @@
   --foreground-rgb: 63, 62, 91;
   --background-rgb: 228, 230, 242;
 }
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -22,10 +23,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
   section {
     @apply px-6 md:px-24;
   }
+
   p {
     @apply text-sm md:text-xl;
   }
 }
+
