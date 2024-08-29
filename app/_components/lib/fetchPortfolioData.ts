@@ -10,7 +10,7 @@ export interface PortfolioItem {
 
 export async function fetchPortfolioData(): Promise<PortfolioItem[]> {
   try {
-    const res = await fetch("http://localhost:3000/api/portfolio", {
+    const res = await fetch("https://seracode.netlify.app/api/portfolio", {
       next: { revalidate: 60 }, // Optional: Cache revalidation interval in seconds
     });
     if (!res.ok) {
