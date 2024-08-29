@@ -26,4 +26,20 @@ export const portfolio = [
     project_link: "https://dekreza.site",
     category: "Website",
   },
+   {
+    id: 4,
+    project_name: "DekReza Portfolio page yg kesekian",
+    description:
+      "Websitenya Reza yg kesekian",
+    project_link: "https://flyingbear.netlify.app/",
+    category: "Website",
+  },
+   {
+    id: 5,
+    project_name: "Ayam Saus Wuenak",
+    description:
+      "Akan ku lakukan semuanya demi kamu tapi aku mangan sek",
+    project_link: "https://ayam-saus-wuenak.vercel.app/",
+    category: "Website",
+  },
 ];
