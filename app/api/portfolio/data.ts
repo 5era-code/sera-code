@@ -4,7 +4,7 @@ export const portfolio = [
     project_name: "commissions page",
     description:
       "a simple website that displays information related to commissions, such as prices, portfolio, terms of services and others",
-    project_link: "hhttps://comms-dekreza.netlify.app",
+    project_link: "https://comms-dekreza.netlify.app",
     category: "Website",
     thumbnail:
       "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1724928242/commissions-page_e76sdb.png",
@@ -14,7 +14,7 @@ export const portfolio = [
     project_name: "Vtuber debut invitation name renderer",
     description:
       "A website application that is intended to generate names to create invitations in the context of a vtuber's debut invitation",
-    project_link: "hhttps://vtuber-debut-inv.netlify.app",
+    project_link: "https://vtuber-debut-inv.netlify.app",
     category: "Website",
   },
 
